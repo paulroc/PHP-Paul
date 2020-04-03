@@ -8,8 +8,8 @@
     <title>PHP opdrachten</title>
 <body>
 <?php
-for($i = 1; $i<=9; $i++){
-    echo "img src='img/aap".$i.".jpg'>";
+for ($i = 1; $i <= 9; $i++) {
+    echo "img src='img/aap" . $i . ".jpg'>";
 }
 ?>
 </body>
