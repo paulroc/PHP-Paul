@@ -9,16 +9,6 @@
             border: solid black 1px;
             border-collapse: collapse;
         }
-        td {
-            padding: 10px;
-        }
-        img {
-            width: 25px;
-            margin-right: 5px;
-        }
-        td.plaatjes {
-            border: solid white 1px;
-        }
     </style>
 </head>
 <body>
@@ -26,28 +16,26 @@
 <table>
 
 
-
     <?php
     $zwemclubs = array(
-        "de spartelkuikens" => 25,
-        "de waterbuffels" => 32,
-        "plonsmderin" => 11,
-        "bommetje" => 23
+        "INDEX" => "WAARDE",
+        "9.15" => "Mevr. Pietersen",
+        "9.30" => "Mevr. Willems",
+        "9.45" => " ",
+        " 10.00" => "Paul van den Broek",
+        "10.15" => "Karel de Meeuw",
+        "10.30" => " ",
     );
 
-    foreach ($zwemclubs as $clubnaam => $zwemmers) {
+    foreach ($zwemclubs as $index => $waarde) {
 
         echo '<tr>';
 
-        echo "<td>$clubnaam</td>";
+        echo "<td>$index</td>";
 
-        echo "<td>$zwemmers</td>";
+        echo "<td>$waarde</td>";
 
-        echo '<td class="plaatjes">';
-        $plaatjes = floor($zwemmers /5);
-        for ($i = 0 ; $i < $plaatjes ; $i++){
-            echo '<img src="img/swim-864383_640.jpg" alt="plaatje">';
-        }
+
         echo '</td>';
 
         echo '</tr>';
