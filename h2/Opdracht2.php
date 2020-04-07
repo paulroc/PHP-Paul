@@ -1,4 +1,5 @@
 <?php
-$a="Mensen die geen fout";
-$b="en maken, werken";
+$a="die geen fout";
+$b="en ";
 $c="niet.";
+echo "Mensen $a$b makan, werken $c";

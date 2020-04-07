@@ -1,4 +1,6 @@
 <?php
-$a="De cursus omgaan";
+$a="\" omgaan";
 $b="met";
-$c="teleurstelling kan vanavond helaas niet doorgaan.";
+$c="teleur.";
+
+echo "De cursus $a $b {$c}stelingen\" kan vanavond helaas niet doorgaan.";

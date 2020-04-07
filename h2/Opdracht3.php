@@ -1,5 +1,5 @@
 <?php
-$a="Try and";
+$a="ry";
 $c="fail";
-$b=",but nevefail to try.";
-echo $a.$c.$b;
+$b="but";
+echo "T$a and $c, $b never $c to t$a .";
