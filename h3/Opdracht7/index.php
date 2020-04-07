@@ -17,7 +17,7 @@
 
 
     <?php
-    $zwemclubs = array(
+    $kappersagenda = array(
         "INDEX" => "WAARDE",
         "9.15" => "Mevr. Pietersen",
         "9.30" => "Mevr. Willems",
@@ -27,7 +27,7 @@
         "10.30" => " ",
     );
 
-    foreach ($zwemclubs as $index => $waarde) {
+    foreach ($kappersagenda as $index => $waarde) {
 
         echo '<tr>';
 
