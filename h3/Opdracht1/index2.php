@@ -8,10 +8,10 @@
     <title>PHP opdrachten</title>
 <body>
 <?php
-$bomen = array("img_0050.jpg", "lillypilly1.jpg", "Maranchery_Biyyam_Kayal_Kandal.jpg");
+$apen = array("aap1.jpg", "aap2.jpg", "app3.jpg", "aap4", "aap5");
 
-foreach ($bomen as $boom) {
-    echo "<img src='img/bomen/".$boom."'>";
+foreach ($apen as $aap) {
+    echo '<img src="img/'.$aap .'".$aap.">';
 }
 ?>
 </body>

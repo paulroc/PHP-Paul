@@ -8,11 +8,12 @@
     <title>PHP opdrachten</title>
 <body>
 <?php
-for ($i = 1; $i <= 9; $i++) {
-    echo "img src='img/aap" . $i . ".jpg'>";
+$apen = array("aap1.jpg", "aap2.jpg", "app3.jpg", "aap4", "aap5");
+
+foreach ($apen as $aap) {
+    echo '<img src="img/'.$aap .'".$aap.">';
 }
 ?>
 </body>
 </head>
 </html>
-
