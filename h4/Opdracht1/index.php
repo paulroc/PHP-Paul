@@ -22,15 +22,7 @@ function calculateFahrenheitFromCelsius($celsius){
     echo "{$celsius} degrees Celsius amounts to {$fahrenheit}";
 }
 
-    //$celcius = array("20","30","40","50");
-    //$fahrenheit = array("68","86","104","122");
-    //geefArrayWeerAlslijst($celcius);
-    //geefArrayWeerAlslijst($fahrenheit);
 
-    //function   geefArrayWeerAlslijst($arr){
-        //foreach ($arr as $arr_element){
-        //    echo "<li>".$arr_element."</li>";
-   // }
     ?>
 
 </ul>
