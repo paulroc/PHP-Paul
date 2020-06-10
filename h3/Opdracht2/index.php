@@ -6,28 +6,16 @@
 <html>
 <head>
     <title>PHP opdrachten</title>
-    <style>
-        div#kerstboom{
-            text-align: center;
-        }
-    </style>
-
-</head>
 <body>
-<div id="kerstboom">
-    *<br>**<br>***<br>*****<br>******<br>
-</div>
 <?php
-for($i = 0; $i<=5; $i++){
-    echo '<div class="row"';
-    for ($j = 0; $j<$i; $j++){
-        echo "*";
-    }
-    echo "<br>";
+$apen = array("aap1.jpg", "aap2.jpg", "app3.jpg", "aap4", "aap5");
+
+foreach ($apen as $aap) {
+    echo '<img src="img/'.$aap .'".$aap.">';
 }
 ?>
 </body>
-
+</head>
 </html>
 
 

@@ -1,60 +1,45 @@
+<?php
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=width">
-    <title>PHP opdracht</title>
+    <title>php opdracht</title>
     <style>
-        table, tr, td {
-            border: solid black 1px;
-            border-collapse: collapse;
-        }
-        td {
-            padding: 10px;
-        }
-        img {
-            width: 25px;
-            margin-right: 5px;
-        }
-        td.plaatjes {
-            border: solid white 1px;
-        }
+
     </style>
 </head>
 <body>
+<?php
+define("FARE", 10);
+define("SENIOR_AGE", 65);
+define("SENIOR_DISCOUNT", 50);
+define("JUIOR_AGE", 12);
+define("JUNIOR_DISCOUNT", 50);
+define("KIDS_AGE", 3);
+define("KIDS_DISCOUNT", 100);
 
-<table>
 
 
-
-    <?php
-    $zwemclubs = array(
-        "de spartelkuikens" => 25,
-        "de waterbuffels" => 32,
-        "plonsmderin" => 11,
-        "bommetje" => 23
-    );
-
-    foreach ($zwemclubs as $clubnaam => $zwemmers) {
-
-        echo '<tr>';
-
-        echo "<td>$clubnaam</td>";
-
-        echo "<td>$zwemmers</td>";
-
-        echo '<td class="plaatjes">';
-        $plaatjes = floor($zwemmers /5);
-        for ($i = 0 ; $i < $plaatjes ; $i++){
-            echo '<img src="img/swim-864383_640.jpg" alt="plaatje">';
-        }
-        echo '</td>';
-
-        echo '</tr>';
+for ($i = 0 ; $i <= 80 ; $i++){
+    $age = $i;
+    if ($age >= SENIOR_AGE){
+        $price = FARE * ((100 - SENIOR_DISCOUNT) / 100);
+    }else if ($age < KIDS_AGE){
+        $price = FARE * ((100 - KIDS_DISCOUNT) / 100);
+    }else if ($age <= JUIOR_AGE){
+        $price = FARE * ((100 - JUNIOR_DISCOUNT) / 100);
+    }else if ($age > SENIOR_AGE){
+        $price = FARE * ((100 - SENIOR_DISCOUNT) / 100);
+    }else {
+        $price = FARE;
     }
-    ?>
+    echo 'Iemand van ' . $age . ' betaald ' . $price . ' euro.<br>';
+}
 
-</table>
 
+
+
+?>
 </body>
 </html>
