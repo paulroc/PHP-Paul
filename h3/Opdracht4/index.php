@@ -1,5 +1,7 @@
 <?php
-for ($x = 35; $x >= 25; $x++) {
+$x = 35;
+while ($x>= 25){
     echo "hoppelepee";
+    $x--;
 }
 
