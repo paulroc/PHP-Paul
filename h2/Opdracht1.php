@@ -1,7 +1,7 @@
 
-
+<?php
 $c = 10000;
-echo $c;
+
 
 $a = "Ik heb niet gefaald";
 
